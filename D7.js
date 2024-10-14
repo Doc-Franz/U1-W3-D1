@@ -282,3 +282,10 @@ console.log(findElement(movies, "tt0848228"));
 /* ESERCIZIO 15 (findIndex)
   Scrivi una funzione per ottenere dall'array fornito l'indice del primo film uscito nell'anno fornito come parametro.
 */
+
+const indexFirstMovie = function (movies, n) {
+  const firstMovie = movies.findIndex((obj) => obj.Year === n);
+  return firstMovie;
+};
+
+console.log(indexFirstMovie(movies, "2005"));
